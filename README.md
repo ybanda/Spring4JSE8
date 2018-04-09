@@ -8,7 +8,7 @@
 - [] Hibernate CRUD
 - [] Spring MVC and Hibernate CRUD app
 - [] Spring Security
-- [] Maven , Gradle.
+- [x] Maven , Gradle.
 
 # Concepts
 
