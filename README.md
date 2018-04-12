@@ -15,19 +15,16 @@
 # Concepts
 - ### Spring Boot
 
-1) Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run". We take an opinionated view of the Spring platform and third-party libraries so you can get started with minimum fuss. Most Spring Boot applications need very little Spring configuration.
+    1) Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run". We take an opinionated view of the Spring platform and third-party libraries so you can get started with minimum fuss. Most Spring Boot applications need very little Spring configuration.
 
-2) Setups the default Configuration , starts Spring Application Context , Perform class path scan , Starts Tomcat Server.
-
-3) Whenever an Object is returned from the REST Controller in the form of an array , Spring boot will return the list in an JSON Format.
-
-4) Bill of Materials - List of dependencies that spring boot will download and add in the class path based on version specified in pom.
-
-5) Embedded Tomcat Server - Convenience , Servlet Container config is now app config , Standalone Application , best for microservice architecture.
+	2) Setups the default Configuration , starts Spring Application Context , Perform class path scan , Starts Tomcat Server.
+	3) Whenever an Object is returned from the REST Controller in the form of an array , Spring boot will return the list in an JSON Format.
+	4) Bill of Materials - List of dependencies that spring boot will download and add in the class path based on version specified in pom.
+	5) Embedded Tomcat Server - Convenience , Servlet Container config is now app config , Standalone Application , best for microservice architecture.
 
 		
 - ### Spring Core
-        Build a complete Spring MVC and Hibernate CRUD Project ... all from scratch
+       	Build a complete Spring MVC and Hibernate CRUD Project ... all from scratch
         Set up your Spring and Hibernate development environment with Tomcat and Eclipse
         Wire beans together in the Spring container using Inversion of Control
         Configure the Spring container for Dependency Injection
