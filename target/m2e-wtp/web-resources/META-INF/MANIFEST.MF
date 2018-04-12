@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Spring4JSE8
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Yashwanth
+Implementation-Vendor-Id: Spring4JSE8
+Build-Jdk: 1.8.0_161
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/Spring4JSE8
+Created-By: Maven Integration for Eclipse
+
