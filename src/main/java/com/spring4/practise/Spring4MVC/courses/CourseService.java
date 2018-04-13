@@ -26,16 +26,18 @@ public class CourseService {
 	
 	public List<Course> getAllCourses(String topicId){
 	
+		return null;
 		//return topics;
-		return courseRepository.findByTopicId(topicId);
+		//return courseRepository.findByTopicId(topicId);
 	}
 	
 	public Course getCourse(String topicId) {
-//	
+	
 //		return topics.stream().filter(t->t.getId().
 //				equals(topicId)).findFirst().get();	
-		
-		return courseRepository.findOne(topicId);
+//		
+		return courseRepository.findById(topicId).get();
+		//return courseRepository.findOne(topicId);
 	}
 
 	public void addCourse(Course topic) {

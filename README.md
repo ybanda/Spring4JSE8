@@ -77,3 +77,7 @@
         Create Maven POM files and add dependencies
         Search Central Maven repository for Dependency Coordinates
         Run Maven builds from the Eclipse IDE.
+        mvn spring-boot:run --debug
+        mvn clean install
+        
+        
