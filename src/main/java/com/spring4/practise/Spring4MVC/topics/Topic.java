@@ -1,16 +1,21 @@
 package com.spring4.practise.Spring4MVC.topics;
 
-public class Topics {
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
+public class Topic {
+
+	@Id
 	private String id;
 	private String name;
 	private String description;
 	
-	public Topics() {
+	public Topic() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Topics(String id, String name, String description) {
+	public Topic(String id, String name, String description) {
 		super();
 		this.id = id;
 		this.name = name;
