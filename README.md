@@ -77,7 +77,10 @@
         Create Maven POM files and add dependencies
         Search Central Maven repository for Dependency Coordinates
         Run Maven builds from the Eclipse IDE.
+        Actuator will help explain about the health of db.
         mvn spring-boot:run --debug
         mvn clean install
+        java -jar Spring4JSE8.jar
+        
         
         

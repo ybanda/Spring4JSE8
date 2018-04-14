@@ -29,7 +29,7 @@ public class CourseController {
 		return courseService.getAllCourses(id);
 	}
 
-	@RequestMapping("/topic/{topicId}/courses/{id}")
+	@RequestMapping("/topics/{topicId}/courses/{id}")
 	public Course getCourse(@PathVariable String id) {
 		return courseService.getCourse(id);
 	}

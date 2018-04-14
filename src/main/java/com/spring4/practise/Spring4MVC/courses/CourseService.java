@@ -26,9 +26,9 @@ public class CourseService {
 	
 	public List<Course> getAllCourses(String topicId){
 	
-		return null;
+		
 		//return topics;
-		//return courseRepository.findByTopicId(topicId);
+		return courseRepository.findByTopicId(topicId);
 	}
 	
 	public Course getCourse(String topicId) {
