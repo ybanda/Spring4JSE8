@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @Controller
 public class WelcomeController {
 	
-	@Value("${application.message:Hello World}")
+	//@Value("${application.message:Hello World}")
+	@Value("${welcome.message:test}")
 	private String message = "Hello World";
 	
 	@RequestMapping("/")

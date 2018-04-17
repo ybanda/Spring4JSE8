@@ -20,10 +20,11 @@ public class Application  extends SpringBootServletInitializer{
         SpringApplication.run(Application.class, args);
     }
 
-    @Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(Application.class);
-	}
+    // Used for reading JSP Resources
+//    @Override
+//	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+//		return application.sources(Application.class);
+//	}
     @Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
         return args -> {
