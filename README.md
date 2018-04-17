@@ -1,5 +1,5 @@
 # Spring4JSE8
-
+Spring is a Java based open source, light weight , loosely coupled , aspect oriented and dependency injection based application.
 - [x] Maven , Gradle.
 - [x] Spring Boot v 2.0.1
 - [x] Spring Data JPA.
@@ -9,11 +9,20 @@
 - [ ] Spring AOP
 - [ ] Spring MVC
 - [ ] Hibernate CRUD
-- [ ] Spring MVC and Hibernate CRUD app
+
 - [ ] Spring Security
 
 
 # Concepts
+
+- ### Spring Modules
+	1) Spring Core
+	2) Spring Context
+	3) Spring AOP
+	4) Spring DAO
+	5) Spring Web MVC
+	6) Spring ORM.
+	
 - ### Spring Boot
     1) Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run". We take an opinionated view of the Spring platform and third-party libraries so you can get started with minimum fuss. Most Spring Boot applications need very little Spring configuration.
     2) Spring Boot can be created with Spring Initializr(start.spring.io), Spring Boot CLI , STE IDE(Starter Project) with the required configuration.
