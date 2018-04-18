@@ -15,7 +15,7 @@ public class WelcomeController {
 	
 	//@Value("${application.message:Hello World}")
 	@Value("${welcome.message:test}")
-	private String message = "Hello World";
+	private String message = "Welcome to Java Learning Portal";
 	
 	@RequestMapping("/")
 	public String welcome(Map<String,Object> model){
@@ -23,10 +23,10 @@ public class WelcomeController {
 		return "welcome";
 	}
 	
-	@RequestMapping("/JSE8")
+	@RequestMapping("/java8")
 	public String welcomeJSE8(Map<String,Object> model){
 		
-		return "javase8";
+		return "java8";
 	}
 	
 	@RequestMapping("/fail")

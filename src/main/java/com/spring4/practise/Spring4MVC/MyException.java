@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.spring4.practise.Spring4MVC;
 
 /**

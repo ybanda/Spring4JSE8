@@ -9,7 +9,6 @@ Spring is a Java based open source, light weight , loosely coupled , aspect orie
 - [ ] Spring AOP
 - [ ] Spring MVC
 - [ ] Hibernate CRUD
-
 - [ ] Spring Security
 
 
@@ -30,7 +29,8 @@ Spring is a Java based open source, light weight , loosely coupled , aspect orie
 	4) Whenever an Object is returned from the REST Controller in the form of an array , Spring boot will return the list in an JSON Format.
 	5) Bill of Materials - List of dependencies that spring boot will download and add in the class path based on version specified in pom.
 	6) Embedded Tomcat Server - Convenience , Servlet Container config is now app config , Standalone Application , best for microservice architecture.
-    7) Application.port complete list of properties -> https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html 
+    7) Application.port complete list of properties -> https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+    8) spring-boot-devtools will enable auto update the cache. thymeleaf will check for html resources under templates , but for jsp we need to provide the parser and source for the jsps.
 
 - ### Spring Data JPA
 	1) ORM is the approach of taking object oriented data and mapping to a relational datastore (e.g. a RDBMS)
@@ -87,9 +87,23 @@ Spring is a Java based open source, light weight , loosely coupled , aspect orie
         Search Central Maven repository for Dependency Coordinates
         Run Maven builds from the Eclipse IDE.
         Actuator will help explain about the health of db.
+       
         mvn spring-boot:run --debug
         mvn clean install
         java -jar Spring4JSE8.jar
+        
+
+### OCAJP-8
+
+- [x] Java Basics
+- [x] Java Data types
+- [x] Methods and Encapsulation
+- [x] Classes from Java API 
+- [x] Arrays
+- [x] Flow Control
+- [x] Inheritance
+- [ ] Exception Handling
+
         
         
         
