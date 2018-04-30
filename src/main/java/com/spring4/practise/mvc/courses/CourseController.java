@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.spring4.practise.Spring4MVC.courses;
+package com.spring4.practise.mvc.courses;
 
 import java.util.List;
 
@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.spring4.practise.Spring4MVC.topics.Topic;
+import com.spring.practise.mvc.entity.Author;
+import com.spring.practise.mvc.services.AuthorService;
+import com.spring4.practise.mvc.topics.Topic;
 
 /**
  * @author Yashwanth
@@ -23,6 +25,9 @@ public class CourseController {
 
 	@Autowired
 	private CourseService courseService;
+	
+	@Autowired
+	private AuthorService authorService;
 	
 	@RequestMapping("/topics/{id}/courses")
 	public List<Course> getAllCourses(@PathVariable String id) {
@@ -58,4 +63,9 @@ public class CourseController {
 //		 courseService.deleteCourse(id);
 //	}
 	
+	@RequestMapping("/author1")
+	public List<Author> getAllAuthors(){
+		
+		return authorService.getAllAuthors();
+	}
 }

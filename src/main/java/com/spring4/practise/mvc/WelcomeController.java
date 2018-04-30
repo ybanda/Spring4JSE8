@@ -1,4 +1,4 @@
-package com.spring4.practise.Spring4MVC;
+package com.spring4.practise.mvc;
 
 import java.util.Map;
 
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @Controller
 public class WelcomeController {
 	
-	//@Value("${application.message:Hello World}")
 	@Value("${welcome.message:test}")
 	private String message = "Welcome to Java Learning Portal";
 	

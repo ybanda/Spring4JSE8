@@ -1,25 +1,32 @@
-package com.spring4.practise.Spring4MVC.topics;
+package com.spring4.practise.mvc.courses;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+import com.spring4.practise.mvc.topics.Topic;
 
 @Entity
-public class Topic {
+public class Course {
 
 	@Id
 	private String id;
 	private String name;
 	private String description;
 	
-	public Topic() {
+	@ManyToOne
+	private Topic topic;
+	
+	public Course() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Topic(String id, String name, String description) {
+	public Course(String id, String name, String description,String topicId) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.description = description;
+		this.topic = new Topic(topicId,"","");
 	}
 	
 	/**
@@ -57,6 +64,11 @@ public class Topic {
 	 */
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public void setTopic(Topic topic) {
+		this.topic =topic;
+		
 	}
 	
 	

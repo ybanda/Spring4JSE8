@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.spring4.practise.Spring4MVC.courses;
+package com.spring4.practise.mvc.courses;
 
 import java.util.List;
 

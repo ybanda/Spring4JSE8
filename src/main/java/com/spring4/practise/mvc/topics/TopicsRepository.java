@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.spring4.practise.Spring4MVC.topics;
+package com.spring4.practise.mvc.topics;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

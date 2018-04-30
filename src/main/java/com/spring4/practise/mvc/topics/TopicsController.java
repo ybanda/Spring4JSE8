@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.spring4.practise.Spring4MVC.topics;
+package com.spring4.practise.mvc.topics;
 
 import java.util.List;
 

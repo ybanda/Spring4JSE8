@@ -1,8 +1,10 @@
 /**
  * 
  */
-package com.spring4.practise.Spring4MVC.courses;
+package com.spring4.practise.mvc.topics;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,10 +15,10 @@ import org.springframework.stereotype.Service;
  *
  */
 @Service
-public class CourseService {
+public class TopicService {
 
 	@Autowired
-	private CourseRepository courseRepository;
+	private TopicsRepository topicsRepository;
 	
 //	private List<Topic> topics =new ArrayList<>(Arrays.asList(
 //			new Topic("Spring","Spring Framwork","Spring Framework Description"),
@@ -24,29 +26,29 @@ public class CourseService {
 //			new Topic("Angular 4","Angular JS ","Angular - JS Framework")
 //			));
 	
-	public List<Course> getAllCourses(String topicId){
-	
-		
+	public List<Topic> getAllTopics(){
+		List<Topic> topics = new ArrayList<>();
+		topicsRepository.findAll().forEach(topics::add);
 		//return topics;
-		return courseRepository.findByTopicId(topicId);
+		return topics;
 	}
 	
-	public Course getCourse(String topicId) {
-	
+	public Topic getTopic(String topicId) {
+//	
 //		return topics.stream().filter(t->t.getId().
 //				equals(topicId)).findFirst().get();	
-//		
-		return courseRepository.findById(topicId).get();
-		//return courseRepository.findOne(topicId);
+		
+		//return topicsRepository.findOne(topicId);
+		return topicsRepository.findById(topicId).get();
 	}
 
-	public void addCourse(Course topic) {
+	public void addTopic(Topic topic) {
 		//topics.add(topic);
-		courseRepository.save(topic);
+		topicsRepository.save(topic);
 		
 	}
 
-	public void updateCourse(String id ,Course topic) {
+	public void updateTopic(String id ,Topic topic) {
 //		for(Topic top :topics) {
 //			if(top.getId().equals(id)){
 //				
@@ -57,12 +59,12 @@ public class CourseService {
 //			
 //		}
 		
-		courseRepository.save(topic);
+		topicsRepository.save(topic);
 	}
 
-	public void deleteCourse(String id) {
+	public void deleteTopic(String id) {
 		//topics.remove(getTopic(id));
 		//topics.removeIf(t->t.getId().equals(id));
-		courseRepository.delete(getCourse(id));
+		topicsRepository.delete(getTopic(id));
 	}
 }

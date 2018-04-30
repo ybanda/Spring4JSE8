@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.spring4.practise.Spring4MVC;
+package com.spring4.practise.mvc;
 
 /**
  * @author Yashwanth

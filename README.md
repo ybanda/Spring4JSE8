@@ -3,13 +3,14 @@ Spring is a Java based open source, light weight , loosely coupled , aspect orie
 - [x] Maven , Gradle.
 - [x] Spring Boot v 2.0.1
 - [x] Spring Data JPA.
-- [ ] Spring Core
-- [ ] Spring Annotations
-- [ ] Spring Java Configuration
-- [ ] Spring AOP
-- [ ] Spring MVC
-- [ ] Hibernate CRUD
-- [ ] Spring Security
+- [x] Spring Core
+- [x] Spring Annotations
+- [x] Spring Java Configuration
+- [x] Spring AOP
+- [x] Spring MVC
+- [x] Hibernate CRUD
+- [x] Spring Security
+- [ ] MicroServices
 
 
 # Concepts
@@ -92,17 +93,6 @@ Spring is a Java based open source, light weight , loosely coupled , aspect orie
         mvn clean install
         java -jar Spring4JSE8.jar
         
-
-### OCAJP-8
-
-- [x] Java Basics
-- [x] Java Data types
-- [x] Methods and Encapsulation
-- [x] Classes from Java API 
-- [x] Arrays
-- [x] Flow Control
-- [x] Inheritance
-- [ ] Exception Handling
 
         
         
