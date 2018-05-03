@@ -10,7 +10,9 @@ Spring is a Java based open source, light weight , loosely coupled , aspect orie
 - [x] Spring MVC
 - [x] Hibernate CRUD
 - [x] Spring Security
+- [x] Cloud Foundry Configuration and deploy with spring Boot.
 - [ ] MicroServices
+ 
 
 
 # Concepts
@@ -93,6 +95,11 @@ Spring is a Java based open source, light weight , loosely coupled , aspect orie
         mvn clean install
         java -jar Spring4JSE8.jar
         
+Deployment steps for Cloud Foundry
+
+	cf login -a api.run.pivotal.io - to Login to Cloud Foundry Console.
+	cf push spring-boot -p spring-boot-0.0.1-SNAPSHOT.jar - Deploy the jar into Cloud Foundry.
+    In case you need to change the buildpacks. Use -b https://github.com/cloudfoundry/java-buildpack.git#v3.7
 
         
         

@@ -1,0 +1,7 @@
+---
+applications:
+- name: Spring4JS8
+  path: target/Spring4JSE8-2.0.1-SNAPSHOT.war
+  domain: cfapps.io
+  memory: 512m
+  instances: 1
