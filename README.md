@@ -94,8 +94,15 @@ Spring is a Java based open source, light weight , loosely coupled , aspect orie
         mvn spring-boot:run --debug
         mvn clean install
         java -jar Spring4JSE8.jar
-        
-Deployment steps for Cloud Foundry
+- ### Access In Memory Db
+	http://localhost:8080/h2-console/
+	Specify the Driver Class Name - org.h2.Driver
+	JDBC URL  - jdbc:h2:mem:testdb
+	User Name - sa
+	password  - <blank>
+	
+	
+- ### Deployment steps for Cloud Foundry
 
 	cf login -a api.run.pivotal.io - to Login to Cloud Foundry Console.
 	cf push spring-boot -p spring-boot-0.0.1-SNAPSHOT.jar - Deploy the jar into Cloud Foundry.
