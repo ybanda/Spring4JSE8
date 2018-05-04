@@ -3,6 +3,8 @@ package com.spring4.practise.mvc.topics;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
 @Entity
 public class Topic {
 
