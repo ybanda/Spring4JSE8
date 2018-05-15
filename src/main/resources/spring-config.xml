@@ -8,7 +8,7 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd"> 
         
-  <bean class="com.spring.practise.mvc.services.AuthorService" id="authorService">
+  <bean class="com.spring4.practise.mvc.services.AuthorService" id="authorService">
   		<!-- <property name="message" value ="testing Setter Injection"/> -->
   </bean>
 	

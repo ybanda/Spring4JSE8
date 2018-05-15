@@ -1,4 +1,4 @@
-package com.spring.practise.mvc.entity;
+package com.spring4.practise.mvc.entity;
 
 public class Author {
 

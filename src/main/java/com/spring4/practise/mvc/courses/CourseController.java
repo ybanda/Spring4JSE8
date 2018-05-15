@@ -6,14 +6,17 @@ package com.spring4.practise.mvc.courses;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.spring.practise.mvc.entity.Author;
-import com.spring.practise.mvc.services.AuthorService;
+import com.spring4.practise.mvc.entity.Author;
+import com.spring4.practise.mvc.services.AuthorService;
 import com.spring4.practise.mvc.topics.Topic;
 
 /**
@@ -21,6 +24,7 @@ import com.spring4.practise.mvc.topics.Topic;
  *
  */
 @RestController
+@RequestMapping("/api")
 public class CourseController {
 
 	@Autowired
@@ -29,12 +33,12 @@ public class CourseController {
 	@Autowired
 	private AuthorService authorService;
 	
-	@RequestMapping("/topics/{id}/courses")
+	@GetMapping("/topics/{id}/courses")
 	public List<Course> getAllCourses(@PathVariable String id) {
 		return courseService.getAllCourses(id);
 	}
 
-	@RequestMapping("/topics/{topicId}/courses/{id}")
+	@GetMapping("/topics/{topicId}/courses/{id}")
 	public Course getCourse(@PathVariable String id) {
 		return courseService.getCourse(id);
 	}
@@ -43,13 +47,13 @@ public class CourseController {
 	 * RequestBody tells the spring MVC that ur req payload will contain json representation of Topic Object
 	 * @param topic
 	 */
-	@RequestMapping(method =RequestMethod.POST,value="/topics/{topicId}/courses/{id}")
+	@PostMapping(value="/topics/{topicId}/courses/{id}")
 	public void addCourse(@RequestBody Course course,@PathVariable String topicId) {
 		course.setTopic(new Topic(topicId,"",""));
 		courseService.addCourse(course);
 	}
 	
-	@RequestMapping(method = RequestMethod.PUT,value="/topics/{topicId}/courses/{id}")
+	@PutMapping(value="/topics/{topicId}/courses/{id}")
 	public void updateTopic(@RequestBody Course course , 
 			@PathVariable String topicId,
 			@PathVariable String id) {
@@ -58,12 +62,12 @@ public class CourseController {
 		courseService.updateCourse(id,course);
 	}
 	
-//	@RequestMapping(value ="/topic/{id}", method = RequestMethod.DELETE)
-//	public void deleteTopic(@PathVariable String id) {
-//		 courseService.deleteCourse(id);
-//	}
+	@RequestMapping(value ="/topic/{id}", method = RequestMethod.DELETE)
+	public void deleteTopic(@PathVariable String id) {
+		 courseService.deleteCourse(id);
+	}
 	
-	@RequestMapping("/author1")
+	@GetMapping("/author1")
 	public List<Author> getAllAuthors(){
 		
 		return authorService.getAllAuthors();

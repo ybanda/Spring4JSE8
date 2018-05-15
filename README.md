@@ -114,6 +114,7 @@ https://console.run.pivotal.io/
     cf logs Spring4JSE8 --recent
     In case you need to change the buildpacks. Use -b https://github.com/cloudfoundry/java-buildpack.git#v3.7
 
+java -jar target/Spring4JSE8-2.0.1-SNAPSHOT.war -s http://localhost:9080 declarative-linter < Jenkinsfile
 - ### Spring Boot with Swagger
 - ### Spring Boot with Actuator 
         

@@ -1,14 +1,14 @@
 /**
  * 
  */
-package com.spring.practise.mvc.services;
+package com.spring4.practise.mvc.services;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.spring.practise.mvc.entity.Author;
+import com.spring4.practise.mvc.entity.Author;
 
 /**
  * @author Yashwanth
