@@ -12,8 +12,12 @@ Spring is a Java based open source, light weight , loosely coupled , aspect orie
 - [x] Spring Security
 - [x] Cloud Foundry Configuration and deploy with spring Boot.
 - [ ] Actuator
+<<<<<<< HEAD
 - [ ] Spring Swagger.
 
+=======
+- [x] Spring Swagger.
+>>>>>>> 1984aa1ebc9fdc2ff1ab4f80484f535386295649
  
 
 
