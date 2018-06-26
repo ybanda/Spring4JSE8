@@ -73,6 +73,12 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
+		
+	<!-- Spring boot Actuator Dependency -->
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-actuator</artifactId>
+	</dependency>
 
 		<!-- Optional, for bootstrap -->
 		<dependency>

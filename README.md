@@ -13,6 +13,7 @@ Spring is a Java based open source, light weight , loosely coupled , aspect orie
 - [x] Cloud Foundry Configuration and deploy with spring Boot.
 - [ ] Actuator
 - [ ] Spring Swagger.
+
  
 
 
@@ -115,8 +116,12 @@ https://console.run.pivotal.io/
     In case you need to change the buildpacks. Use -b https://github.com/cloudfoundry/java-buildpack.git#v3.7
 
 java -jar target/Spring4JSE8-2.0.1-SNAPSHOT.war -s http://localhost:9080 declarative-linter < Jenkinsfile
+
 - ### Spring Boot with Swagger
+http://localhost:8080/Spring4JSE8/swagger-ui.html#/
+
 - ### Spring Boot with Actuator 
+Health Check - http://localhost:8080/Spring4JSE8/actuator/health
         
         
         
